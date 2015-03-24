@@ -1,4 +1,13 @@
 $(function () {
+    $('#myTab a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
+
+
+
+
+
     var $tab = $('#tab-reviews');
     $('a').click(function(){
         var tab = $(this).data("type");
